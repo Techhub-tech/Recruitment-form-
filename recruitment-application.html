@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Recruitment Partner Application — WebSprout Hub</title>
+<meta name="description" content="Apply to become a WebSprout Hub Commission-Based Recruitment Partner." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="application-page">
+
+<header class="application-header">
+  <img src="assets/images/websprout-logo-full.png" alt="WebSprout Hub — Rooted for Africa. Built for the Future." class="application-header__logo">
+</header>
+
+<main id="main-content" class="application-main">
+  <div class="application-card">
+
+    <!-- Form view -->
+    <div id="formView">
+      <p class="application-eyebrow">Recruitment Partner Application</p>
+      <h1 class="application-title">WebSprout Hub — Recruitment Partner Application</h1>
+
+      <div class="application-intro">
+        <p>Thank you for your interest in joining WebSprout Hub.</p>
+        <p>We are recruiting <strong>Commission-Based Recruitment Partners</strong> who can help us reach more students and introduce them to WebSprout Hub.</p>
+        <p>This is a flexible remote opportunity that can be done from home. Recruitment Partners earn commission when students they successfully refer register with WebSprout Hub.</p>
+        <p>Please complete this short application form. Our team will review your information and contact you if you are selected for the next stage.</p>
+      </div>
+
+      <form id="recruitmentForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+        <input type="hidden" name="_subject" value="New WebSprout Hub Recruitment Partner Application">
+
+        <p class="form-error" id="formError" role="alert" hidden></p>
+
+        <!-- 1 -->
+        <label class="field">
+          <span>1. Full Name <em>*</em></span>
+          <input type="text" name="Full Name" id="fullName" required placeholder="Enter your full name">
+        </label>
+
+        <!-- 2 -->
+        <label class="field">
+          <span>2. Email Address <em>*</em></span>
+          <input type="email" name="_replyto" id="email" required placeholder="Enter your email address">
+        </label>
+
+        <!-- 3 -->
+        <label class="field">
+          <span>3. Phone / WhatsApp Number <em>*</em></span>
+          <input type="tel" name="Phone/WhatsApp Number" id="phone" required placeholder="Enter your phone or WhatsApp number">
+        </label>
+
+        <!-- 4 -->
+        <label class="field">
+          <span>4. State of Residence <em>*</em></span>
+          <select name="State of Residence" id="stateResidence" required>
+            <option value="">Select your state of residence</option>
+            <option>Abia</option><option>Adamawa</option><option>Akwa Ibom</option><option>Anambra</option>
+            <option>Bauchi</option><option>Bayelsa</option><option>Benue</option><option>Borno</option>
+            <option>Cross River</option><option>Delta</option><option>Ebonyi</option><option>Edo</option>
+            <option>Ekiti</option><option>Enugu</option><option>FCT (Abuja)</option><option>Gombe</option>
+            <option>Imo</option><option>Jigawa</option><option>Kaduna</option><option>Kano</option>
+            <option>Katsina</option><option>Kebbi</option><option>Kogi</option><option>Kwara</option>
+            <option>Lagos</option><option>Nasarawa</option><option>Niger</option><option>Ogun</option>
+            <option>Ondo</option><option>Osun</option><option>Oyo</option><option>Plateau</option>
+            <option>Rivers</option><option>Sokoto</option><option>Taraba</option><option>Yobe</option>
+            <option>Zamfara</option><option>Outside Nigeria</option>
+          </select>
+        </label>
+
+        <!-- 5 -->
+        <label class="field">
+          <span>5. State of Origin <em>*</em></span>
+          <input type="text" name="State of Origin" id="stateOrigin" required placeholder="Enter your state of origin">
+        </label>
+
+        <!-- 6 -->
+        <fieldset class="field-group">
+          <legend>6. What best describes you? <em>*</em></legend>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="What best describes you" value="Student" required> Student</label>
+            <label class="option"><input type="radio" name="What best describes you" value="Graduate" required> Graduate</label>
+            <label class="option"><input type="radio" name="What best describes you" value="Job seeker" required> Job seeker</label>
+            <label class="option"><input type="radio" name="What best describes you" value="Entrepreneur" required> Entrepreneur</label>
+            <label class="option"><input type="radio" name="What best describes you" value="Digital/Tech enthusiast" required> Digital/Tech enthusiast</label>
+            <label class="option"><input type="radio" name="What best describes you" value="Other" id="describeOther" required> Other</label>
+          </div>
+          <input type="text" class="field-group__other" id="describeOtherText" name="What best describes you (Other)" placeholder="Please specify" hidden>
+        </fieldset>
+
+        <!-- 7 -->
+        <label class="field">
+          <span>7. Why do you want to join WebSprout Hub as a Recruitment Partner? <em>*</em></span>
+          <textarea name="Why join as a Recruitment Partner" id="whyJoin" required rows="4" placeholder="Tell us why you'd like to join"></textarea>
+        </label>
+
+        <!-- 8 -->
+        <fieldset class="field-group">
+          <legend>8. How did you hear about WebSprout Hub? <em>*</em></legend>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="How did you hear about us" value="WhatsApp" required> WhatsApp</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="Instagram" required> Instagram</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="Facebook" required> Facebook</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="TikTok" required> TikTok</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="LinkedIn" required> LinkedIn</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="Friend/Referral" required> Friend/Referral</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="WebSprout Hub member" required> WebSprout Hub member</label>
+            <label class="option"><input type="radio" name="How did you hear about us" value="Other" id="hearOther" required> Other</label>
+          </div>
+          <input type="text" class="field-group__other" id="hearOtherText" name="How did you hear about us (Other)" placeholder="Please specify" hidden>
+        </fieldset>
+
+        <!-- 9 -->
+        <fieldset class="field-group">
+          <legend>9. Do you have access to a laptop or computer? <em>*</em></legend>
+          <div class="option-list option-list--inline">
+            <label class="option"><input type="radio" name="Access to laptop/computer" value="Yes" required> Yes</label>
+            <label class="option"><input type="radio" name="Access to laptop/computer" value="No" required> No</label>
+            <label class="option"><input type="radio" name="Access to laptop/computer" value="I can access one when needed" required> I can access one when needed</label>
+          </div>
+        </fieldset>
+
+        <!-- 10 -->
+        <fieldset class="field-group">
+          <legend>10. Do you have stable internet access? <em>*</em></legend>
+          <div class="option-list option-list--inline">
+            <label class="option"><input type="radio" name="Stable internet access" value="Yes" required> Yes</label>
+            <label class="option"><input type="radio" name="Stable internet access" value="Sometimes" required> Sometimes</label>
+            <label class="option"><input type="radio" name="Stable internet access" value="No" required> No</label>
+          </div>
+        </fieldset>
+
+        <!-- 11 -->
+        <fieldset class="field-group">
+          <legend>11. Can you promote WebSprout Hub and refer interested students? <em>*</em></legend>
+          <div class="option-list option-list--inline">
+            <label class="option"><input type="radio" name="Can promote and refer students" value="Yes" required> Yes</label>
+            <label class="option"><input type="radio" name="Can promote and refer students" value="No" required> No</label>
+            <label class="option"><input type="radio" name="Can promote and refer students" value="I would like to learn more" required> I would like to learn more</label>
+          </div>
+        </fieldset>
+
+        <!-- 12 -->
+        <label class="field">
+          <span>12. Briefly tell us about yourself and any relevant experience you have in sales, marketing, social media, community building or student recruitment. <span class="field__optional">(Optional)</span></span>
+          <textarea name="Relevant experience" id="experience" rows="4" placeholder="Optional — share any relevant experience"></textarea>
+        </label>
+
+        <!-- 13 -->
+        <fieldset class="field-group">
+          <legend>13. Where would you mainly promote WebSprout Hub? <span class="field__optional">(Select all that apply)</span></legend>
+          <div class="option-list">
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="WhatsApp"> WhatsApp</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Social media"> Social media</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Schools"> Schools</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Student communities"> Student communities</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Personal network"> Personal network</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Community/youth groups"> Community/youth groups</label>
+            <label class="option"><input type="checkbox" name="Where you'll promote" value="Other" id="promoteOther"> Other</label>
+          </div>
+          <input type="text" class="field-group__other" id="promoteOtherText" name="Where you'll promote (Other)" placeholder="Please specify" hidden>
+        </fieldset>
+
+        <!-- Declaration -->
+        <label class="option option--declaration">
+          <input type="checkbox" id="declaration" required>
+          <span>I understand that this is a commission-based recruitment opportunity and not a fixed-salary position. I understand that commissions are earned based on successful student referrals/registrations. <em>*</em></span>
+        </label>
+
+        <button type="submit" class="btn btn--primary application-submit" id="submitBtn">Submit Application</button>
+      </form>
+    </div>
+
+    <!-- Success view -->
+    <div id="successView" hidden>
+      <div class="application-success">
+        <div class="modal__icon" aria-hidden="true">🎉</div>
+        <h1 class="application-title">Application Received!</h1>
+        <p class="application-intro">
+          Thank you for your interest in joining WebSprout Hub.<br>
+          Our team will review your application and contact you using the details provided.
+        </p>
+        <div class="application-success__brand">
+          <span>🌱 WebSprout Hub</span>
+          <small>Rooted for Africa. Built for the Future.</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="application-footer">
+  <p>&copy; 2026 WebSprout Hub. All rights reserved.</p>
+</footer>
+
+<script src="js/recruitment-form.js"></script>
+</body>
+</html>
